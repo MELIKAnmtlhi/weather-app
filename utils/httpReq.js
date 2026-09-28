@@ -1,8 +1,9 @@
 import { showModal } from "./modal.js";
+import {API_KEY} from "./config.js"
 
 const BASE_URL =
 "http://api.openweathermap.org/data/2.5"
-const API_KEY ="608304ad0c96d33287052b016dc3564b";
+
 
 const getWeatherData = async (type, data) => {
     let url = null;
@@ -41,34 +42,3 @@ const getWeatherData = async (type, data) => {
 };
 
 export default getWeatherData;
-
-
-
-// const getCurrentWeatherByName = async (city) => {
-//    const url =`${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`;
-//    const response = await fetch(url);
-//    const json = await response.json()
-//    return json;
-// };
-
-// const getCurrentWeatherByCoordinates = async (lat , lon) => {
-//    const url =`${BASE_URL}/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-//    const response = await fetch(url);
-//    const json = await response.json()
-//    return json;
-// };
-
-
-// const getForecasetWeatherByName = async (city) => {
-//    const url =`${BASE_URL}/forecast?q=${city}&appid=${API_KEY}&units=metric`;
-//    const response = await fetch(url);
-//    const json = await response.json()
-//    return json;
-// };
-
-// const getForecastWeatherByCoordinates = async (lat , lon) => {
-//    const url =`${BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-//    const response = await fetch(url);
-//    const json = await response.json()
-//    return json;
-// };

@@ -1,0 +1,16 @@
+# Environment
+utils/config.js
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
